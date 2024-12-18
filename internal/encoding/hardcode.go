@@ -1,8 +1,8 @@
 package encoding
 
+type HardEncode struct{}
 
 // Hard encode:
 // index:new_value
-func Encode()  {
-  
+func (h *HardEncode) Encode(raw *RawData) {
 }
