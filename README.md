@@ -9,6 +9,14 @@ Project to create custom Delta Encoding. The idea is to create a video streaming
 
 ![VCDIFF](./vcdiff_example.png) 
 
+## Read and Write
+
+How to extract frames and use then in memory?
+
+Solutions:
+  1. [FFMPEG](https://stackoverflow.com/questions/10957412/fastest-way-to-extract-frames-using-ffmpeg) 
+  2. [FFMPEG with Golang Wrapper](https://github.com/u2takey/ffmpeg-go?tab=readme-ov-file#task-frame-from-video) 
+
 ## Configurations
 
 ### 1. "Byte rate"
