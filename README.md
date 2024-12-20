@@ -9,6 +9,12 @@ Project to create custom Delta Encoding. The idea is to create a video streaming
 
 ![VCDIFF](./vcdiff_example.png) 
 
+## Hard Encode (My brute attempt)
+
+The idea is simple, every byte is calculated the diff, sending the index and the diff. Check if the bytelen is necessary.
+
+![Hard Encode](./HardEncode.png) 
+
 ## Read and Write
 
 How to extract frames and use then in memory?
@@ -16,6 +22,7 @@ How to extract frames and use then in memory?
 Solutions:
   1. [FFMPEG](https://stackoverflow.com/questions/10957412/fastest-way-to-extract-frames-using-ffmpeg) 
   2. [FFMPEG with Golang Wrapper](https://github.com/u2takey/ffmpeg-go?tab=readme-ov-file#task-frame-from-video) 
+  3. Libav - FFMPEG (Better to know more about ffmpeg)
 
 ## Configurations
 

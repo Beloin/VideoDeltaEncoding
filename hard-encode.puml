@@ -1,0 +1,16 @@
+@startuml HardEncode
+
+(321-222-001) as a1
+(322-224-001) as a2
+
+(Diff) as diff
+
+a1 --> diff
+a2 --> diff
+
+(00:001-01:002) as result
+
+diff -> result
+
+
+@enduml
