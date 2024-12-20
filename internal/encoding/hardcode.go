@@ -40,7 +40,6 @@ func (h *HardEncode) encode(old *RawData, newD *RawData) *HardResult {
 	oldData := old.Data
 	newData := newD.Data
 	for i := 0; i < len(old.Data); i++ {
-		// linkedList.PushBack()
 		oldV := oldData[i]
 		newV := newData[i]
 		diff := int8(newV) - int8(oldV)
