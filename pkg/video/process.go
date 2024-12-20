@@ -6,9 +6,9 @@ import (
 	"io"
 	"os"
 
-	ffmpeg "github.com/u2takey/ffmpeg-go"
 )
 
+// TODO: Convert this to use raw libav or use raw ffmpeg
 // TODO: Implement a full lenght
 func GetFrameAsBmp(inFileName string, frameNum int) io.Reader {
 	buf := bytes.NewBuffer(nil)
