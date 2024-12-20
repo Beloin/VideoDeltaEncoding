@@ -34,3 +34,7 @@ The amount of change that can be sent in a request in bytes
 1. [Wikipedia](https://en.wikipedia.org/wiki/Delta_encoding)
 2. [GoUSB](https://github.com/google/gousb)
 3. [RFC3284 VCDIFF](https://datatracker.ietf.org/doc/html/rfc3284#section-3) and it's [article](https://www.cs.brandeis.edu/~dilant/cs175/%5BSiying-Dong%5D.pdf)
+
+## Code References
+
+1. [FMPEG with pipe](https://stackoverflow.com/questions/52303867/how-do-i-set-ffmpeg-pipe-output) 
