@@ -9,7 +9,8 @@ import (
 	ffmpeg "github.com/u2takey/ffmpeg-go"
 )
 
-func ExampleReadFrameAsBmp(inFileName string, frameNum int) io.Reader {
+// TODO: Implement a full lenght
+func GetFrameAsBmp(inFileName string, frameNum int) io.Reader {
 	buf := bytes.NewBuffer(nil)
 	err := ffmpeg.Input(inFileName).
 		Filter("select", ffmpeg.Args{fmt.Sprintf("gte(n,%d)", frameNum)}).
