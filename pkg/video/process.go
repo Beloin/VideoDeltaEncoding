@@ -8,8 +8,10 @@ import (
 
 )
 
+// TODO: Implement a full lenght video get
+
 // TODO: Convert this to use raw libav or use raw ffmpeg
-// TODO: Implement a full lenght
+// Example with raw ffmpeg: ffmpeg -i ${fileName} -vf "select=eq(n\,0)" -vframes 1 -format image2 -vcodec bmp out%03d.bmp
 func GetFrameAsBmp(inFileName string, frameNum int) io.Reader {
 	buf := bytes.NewBuffer(nil)
 	err := ffmpeg.Input(inFileName).
